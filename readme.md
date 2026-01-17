@@ -12,12 +12,10 @@ This includes the most popular movies and TV shows with detail pages, a search b
 
 Just clone or download and then register for a free API key at https://www.themoviedb.org/settings/api
 
-Once you get your key, just add it to the `api.apiKey` value in the global state at the top.
+Once you get your key, to simplify local development create the file `js/env.js` and paste it there with the following content:
 
-**Note:** If you are using this as a production project, you should not store this in the client. You can create a proxy server and store your key there. I may add that to the repo later on.
-
-I also may convert this to use a module bundler such as Vite or Webpack.
-
-## Theme (HTML & CSS)
-
-I also included the theme here for you to download. It does not include any JavaScript at all. This is what you should use if you are following along with the course.
+```Javascript
+export const ENV = {
+  API_KEY: "paste_your_super_secret_API_key_here",
+};
+```
